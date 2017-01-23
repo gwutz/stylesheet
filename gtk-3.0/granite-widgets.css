@@ -140,10 +140,10 @@
 
 .sidebar .badge,
 .source-list.badge,
-.source-list.badge:prelight,
+.source-list.badge:hover,
 .source-list.badge:selected,
 .source-list.badge:selected:focus,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
     background-image: none;
     background-color: alpha (#000, 0.4);
     color: @titlebar_color;
@@ -151,24 +151,24 @@
     padding: 0 6px;
     margin: 0 3px;
     text-shadow: 0 1px alpha (#000, 0.1);
-    icon-shadow: 0 1px alpha (#000, 0.1);
+    -gtk-icon-shadow: 0 1px alpha (#000, 0.1);
     border-width: 0;
 }
 
 .sidebar .badge:selected,
 .source-list.badge:selected,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
     color: @titlebar_color;
 }
 
 .sidebar .badge:selected:backdrop,
 .source-list.badge:selected:backdrop,
-.source-list.badge:selected:prelight:backdrop {
+.source-list.badge:selected:hover:backdrop {
     background-image: none;
     background-color: alpha (#000, 0.2);
     color: shade (@titlebar_color, 0.95);
     text-shadow: 0 1px alpha (#000, 0.1);
-    icon-shadow: 0 1px alpha (#000, 0.1);
+    -gtk-icon-shadow: 0 1px alpha (#000, 0.1);
 }
 
 .source-list.level-bar,
